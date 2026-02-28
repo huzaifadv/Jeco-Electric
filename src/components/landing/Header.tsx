@@ -29,7 +29,7 @@ export const Header = () => {
           {/* Logo / Brand */}
           <div className="flex items-center gap-2">
             <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-9 md:h-10 w-auto" />
-            <div className="leading-none ml-[-15px]">
+            <div className="leading-none ml-[-10px]">
               <span className="text-base md:text-lg font-extrabold text-primary-foreground tracking-wide">JACO</span>
               <span className="text-base md:text-lg font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
             </div>
