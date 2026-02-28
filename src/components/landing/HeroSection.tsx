@@ -57,7 +57,6 @@ export const HeroSection = () => {
             className="bg-muted text-foreground hover:bg-muted/80 text-lg font-bold px-8 py-6 rounded-lg"
           >
             Get Your Free Quote
-            <ArrowDown className="ml-2 h-5 w-5" />
           </Button>
         </div>
       </div>
