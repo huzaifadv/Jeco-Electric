@@ -9,13 +9,14 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-8 w-auto" />
-              <div className="leading-none">
+              <div className="leading-none ml-[-15px">
                 <span className="text-base font-extrabold text-background tracking-wide">JACO</span>
                 <span className="text-base font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
               </div>
             </div>
             <p className="text-background/50 text-sm leading-relaxed">
-              Leaders in quality electrical service and construction. Serving Broken Arrow, Tulsa, Bixby, Jenks, and surrounding areas.
+              Leaders in quality electrical service and construction. Serving Broken Arrow, Tulsa, Bixby, Jenks, and
+              surrounding areas.
             </p>
           </div>
 
@@ -28,7 +29,11 @@ export const Footer = () => {
                   key={link}
                   onClick={() =>
                     document
-                      .querySelector(`#${link.toLowerCase().replace(/\s/g, "")}` === "#services" ? "#services" : `#${link.toLowerCase().replace(/\s+/g, "")}`)
+                      .querySelector(
+                        `#${link.toLowerCase().replace(/\s/g, "")}` === "#services"
+                          ? "#services"
+                          : `#${link.toLowerCase().replace(/\s+/g, "")}`,
+                      )
                       ?.scrollIntoView({ behavior: "smooth" })
                   }
                   className="block text-sm text-background/50 hover:text-accent transition-colors"
@@ -49,11 +54,15 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <Phone className="h-4 w-4 text-accent shrink-0" />
-                <a href="tel:9188941622" className="hover:text-accent transition-colors">(918) 894-1622</a>
+                <a href="tel:9188941622" className="hover:text-accent transition-colors">
+                  (918) 894-1622
+                </a>
               </div>
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <Mail className="h-4 w-4 text-accent shrink-0" />
-                <a href="mailto:tyson.jacobs@jacoelec.com" className="hover:text-accent transition-colors">tyson.jacobs@jacoelec.com</a>
+                <a href="mailto:tyson.jacobs@jacoelec.com" className="hover:text-accent transition-colors">
+                  tyson.jacobs@jacoelec.com
+                </a>
               </div>
             </div>
           </div>
