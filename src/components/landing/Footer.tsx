@@ -7,10 +7,8 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-md bg-accent flex items-center justify-center">
-                <Zap className="h-5 w-5 text-accent-foreground" />
-              </div>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-10 w-auto" />
               <span className="text-lg font-extrabold text-background tracking-tight">
                 JACO ELECTRIC
               </span>
