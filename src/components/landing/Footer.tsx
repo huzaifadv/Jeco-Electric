@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-8 w-auto" />
-              <div className="leading-none ml-[-15px">
+              <div className="leading-none ml-[-15px]">
                 <span className="text-base font-extrabold text-background tracking-wide">JACO</span>
                 <span className="text-base font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
               </div>
