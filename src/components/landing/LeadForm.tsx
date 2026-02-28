@@ -36,7 +36,7 @@ export const LeadForm = () => {
           Get a <span className="text-accent">Quote</span>
         </h2>
         <p className="text-center text-primary-foreground/50 mb-14">
-          Claim your $50 discount — fill out the form or give us a call
+          Fill out the form or give us a call — we'll get back to you fast
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
