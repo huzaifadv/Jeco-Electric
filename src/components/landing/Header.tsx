@@ -27,10 +27,8 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo / Brand */}
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-              <Zap className="h-6 w-6 text-accent-foreground" />
-            </div>
+          <div className="flex items-center gap-3">
+            <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-12 md:h-14 w-auto" />
             <div className="leading-tight">
               <span className="text-lg md:text-xl font-extrabold text-primary-foreground tracking-tight">
                 JACO ELECTRIC
