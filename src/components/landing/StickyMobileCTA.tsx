@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const StickyMobileCTA = () => {
   const scrollToForm = () => {
-    document.getElementById("lead-form")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
