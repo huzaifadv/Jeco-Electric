@@ -48,8 +48,7 @@ export const HeroSection = () => {
           <Button
             onClick={scrollToForm}
             size="lg"
-            variant="outline"
-            className="border-primary-foreground/25 text-primary-foreground hover:bg-primary-foreground/10 text-lg px-8 py-6 rounded-lg"
+            className="bg-muted text-foreground hover:bg-muted/80 text-lg font-bold px-8 py-6 rounded-lg"
           >
             Get Your Free Quote
             <ArrowDown className="ml-2 h-5 w-5" />
