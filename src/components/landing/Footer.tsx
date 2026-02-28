@@ -7,8 +7,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-0 mb-4">
-              <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-10 w-auto" />
+            <div className="flex items-center gap-2 mb-4">
+              <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-8 w-auto" />
+              <div className="leading-none">
+                <span className="text-base font-extrabold text-background tracking-wide">JACO</span>
+                <span className="text-base font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
+              </div>
             </div>
             <p className="text-background/50 text-sm leading-relaxed">
               Leaders in quality electrical service and construction. Serving Broken Arrow, Tulsa, Bixby, Jenks, and surrounding areas.
