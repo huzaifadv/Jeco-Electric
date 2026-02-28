@@ -20,7 +20,7 @@ export const StickyMobileCTA = () => {
       <Button
         onClick={scrollToForm}
         variant="outline"
-        className="flex-1 border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-bold py-5"
+        className="flex-1 border-primary-foreground/30 text-[#000] font-bold py-5"
       >
         <FileText className="mr-2 h-4 w-4" />
         Get Quote
