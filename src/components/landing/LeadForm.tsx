@@ -82,9 +82,9 @@ export const LeadForm = () => {
             </div>
 
             <div className="p-6 rounded-2xl bg-accent/10 border border-accent/20">
-              <p className="text-accent font-bold text-sm mb-1">⚡ $50 Off First Service</p>
+              <p className="text-accent font-bold text-sm mb-1">⚡ Free Estimates, Always</p>
               <p className="text-primary-foreground/60 text-xs">
-                Mention this offer when you call or submit the form. Limited time only.
+                No hidden fees, no obligations. Get honest pricing from licensed professionals with 30+ years of experience.
               </p>
             </div>
           </div>
