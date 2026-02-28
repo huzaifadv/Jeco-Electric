@@ -32,7 +32,7 @@ export const AboutSection = () => {
         </div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-4 max-w-xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-4 max-w-xl mx-auto">
           {[
             { icon: Users, stat: "30+", label: "Years Experience" },
             { icon: ShieldCheck, stat: "95%", label: "Billed at Estimate" },
