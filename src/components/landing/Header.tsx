@@ -29,7 +29,7 @@ export const Header = () => {
           {/* Logo / Brand */}
           <div className="flex items-center gap-2">
             <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-9 md:h-10 w-auto" />
-            <div className="leading-none">
+            <div className="leading-none -pl-5">
               <span className="text-base md:text-lg font-extrabold text-primary-foreground tracking-wide">JACO</span>
               <span className="text-base md:text-lg font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
             </div>
@@ -83,10 +83,7 @@ export const Header = () => {
               </button>
             ))}
             <div className="px-4 pt-2">
-              <Button
-                asChild
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold"
-              >
+              <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
                 <a href="tel:9188941622">
                   <Phone className="mr-2 h-4 w-4" />
                   (918) 894-1622
