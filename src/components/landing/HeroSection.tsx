@@ -7,10 +7,16 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-primary overflow-hidden">
-      <div className="absolute inset-0 opacity-[0.07]">
-        <div className="absolute -top-1/2 -right-1/4 w-[800px] h-[800px] rounded-full bg-accent" />
-        <div className="absolute -bottom-1/3 -left-1/4 w-[600px] h-[600px] rounded-full bg-accent" />
+    <section className="relative bg-primary overflow-hidden min-h-[85vh] flex items-center">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/wood-bg.jpg"
+          alt=""
+          className="w-full h-full object-cover opacity-30"
+          loading="eager"
+        />
+        <div className="absolute inset-0 bg-primary/70" />
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-32 text-center max-w-3xl">
@@ -26,7 +32,7 @@ export const HeroSection = () => {
           & Construction
         </h1>
 
-        <p className="text-primary-foreground/60 text-lg md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-primary-foreground/70 text-lg md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed">
           Serving Broken Arrow, Tulsa, Bixby, Jenks, and surrounding areas. We are dedicated to providing you the best electrical experience and expertise.
         </p>
         <p className="text-primary-foreground/50 text-base mb-10">

@@ -11,20 +11,31 @@ const points = [
     icon: Award,
     title: "Skilled Professionals",
     description:
-      "Every single member of our company is broadly experienced and fully certified. Our electricians keep their knowledge updated regarding new technologies in the industry.",
+      "Every single member of our company is broadly experienced and fully certified. Our electricians keep their knowledge updated regarding new technologies.",
   },
   {
     icon: HomeIcon,
     title: "Respect for Your Property",
     description:
-      "Whether our Electricians come to your home or office, we respect the privacy of your property. After doing our job, we clean the space and do not leave any kind of mess behind.",
+      "Whether our Electricians come to your home or office, we respect your property. After doing our job, we clean the space and leave no mess behind.",
   },
 ];
 
 export const UnrivaledSection = () => {
   return (
-    <section className="py-16 md:py-24 bg-primary">
-      <div className="container mx-auto px-4 max-w-5xl">
+    <section className="relative py-16 md:py-24 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <img
+          src="/images/electrician-hero.jpg"
+          alt=""
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-primary/90" />
+      </div>
+
+      <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-primary-foreground mb-4">
           What Makes Our Electricians{" "}
           <span className="text-accent">Unrivaled</span>
@@ -35,7 +46,7 @@ export const UnrivaledSection = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {points.map((p) => (
-            <div key={p.title} className="text-center">
+            <div key={p.title} className="text-center bg-primary-foreground/5 backdrop-blur-sm rounded-2xl p-8 border border-primary-foreground/10">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-accent/15 mb-5">
                 <p.icon className="h-8 w-8 text-accent" />
               </div>
