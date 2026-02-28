@@ -25,11 +25,11 @@ export const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-primary border-b border-primary-foreground/10 shadow-lg">
       <div className="container mx-auto px-4">
-        <div className="flex items-center h-16 md:h-20">
+        <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo / Brand */}
           <div className="flex items-center gap-2">
             <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-9 md:h-10 w-auto" />
-            <div className="leading-none">
+            <div className="leading-none ml-[-15px]">
               <span className="text-base md:text-lg font-extrabold text-primary-foreground tracking-wide">JACO</span>
               <span className="text-base md:text-lg font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
             </div>
