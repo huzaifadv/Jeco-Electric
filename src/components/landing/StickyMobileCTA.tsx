@@ -10,7 +10,7 @@ export const StickyMobileCTA = () => {
     <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-primary/95 backdrop-blur-sm border-t border-primary-foreground/10 p-3 flex gap-3">
       <Button
         asChild
-        className="flex-1 bg-accent text-accent-foreground hover:bg-accent/90 font-bold py-5"
+        className="flex-1 bg-accent text-[#000] font-bold py-5"
       >
         <a href="tel:9188941622">
           <Phone className="mr-2 h-4 w-4" />
