@@ -1,4 +1,4 @@
-import { Users, ShieldCheck, Wrench } from "lucide-react";
+import { } from "lucide-react";
 
 export const AboutSection = () => {
   return (
@@ -29,24 +29,6 @@ export const AboutSection = () => {
               Through collaboration with industry-leading materials and the engagement of highly skilled and detail-oriented electricians, we consistently provide robust and enduring solutions for all.
             </p>
           </div>
-        </div>
-
-        {/* Stats row */}
-        <div className="grid md:grid-cols-3 gap-4 max-w-xl mx-auto">
-          {[
-            { icon: Users, stat: "7+", label: "Years Experience" },
-            { icon: ShieldCheck, stat: "100%", label: "Satisfaction" },
-            { icon: Wrench, stat: "24/7", label: "Emergency Service" },
-          ].map((item) => (
-            <div
-              key={item.label}
-              className="text-center p-5 rounded-xl bg-card shadow-sm border border-border/50"
-            >
-              <item.icon className="h-7 w-7 text-accent mx-auto mb-2" />
-              <div className="text-2xl font-extrabold text-foreground">{item.stat}</div>
-              <div className="text-xs text-muted-foreground mt-1">{item.label}</div>
-            </div>
-          ))}
         </div>
       </div>
     </section>
