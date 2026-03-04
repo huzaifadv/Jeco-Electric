@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -24,22 +25,19 @@ export const Footer = () => {
           <div>
             <h4 className="text-background font-bold mb-4">Quick Links</h4>
             <div className="space-y-2">
-              {["Services", "About Us", "Testimonials", "Contact Us"].map((link) => (
-                <button
-                  key={link}
-                  onClick={() =>
-                    document
-                      .querySelector(
-                        `#${link.toLowerCase().replace(/\s/g, "")}` === "#services"
-                          ? "#services"
-                          : `#${link.toLowerCase().replace(/\s+/g, "")}`,
-                      )
-                      ?.scrollIntoView({ behavior: "smooth" })
-                  }
+              {[
+                { label: "Services", href: "/services" },
+                { label: "About Us", href: "/about" },
+                { label: "Careers", href: "/careers" },
+                { label: "Contact Us", href: "/contact" },
+              ].map((link) => (
+                <Link
+                  key={link.label}
+                  to={link.href}
                   className="block text-sm text-background/50 hover:text-accent transition-colors"
                 >
-                  {link}
-                </button>
+                  {link.label}
+                </Link>
               ))}
             </div>
           </div>
