@@ -1,27 +1,27 @@
 const galleryItems = [
   {
-    image: "/images/recessed-lighting.jpg",
-    title: "Recessed Lighting Install",
+    image: "/images/work-1.jpg",
+    title: "Outdoor Lighting & Doorbell",
   },
   {
-    image: "/images/ceiling-fan.jpg",
-    title: "Ceiling Fan Replacement",
+    image: "/images/work-2.jpg",
+    title: "Garage Lighting",
   },
   {
-    image: "/images/kitchen-remodel.jpg",
-    title: "Kitchen Electrical Update",
+    image: "/images/work-3.jpg",
+    title: "Commercial Track Lighting",
   },
   {
-    image: "/images/modern-home.jpg",
-    title: "Modern Home Wiring",
+    image: "/images/work-4.jpg",
+    title: "Pole Light Installation",
   },
   {
-    image: "/images/living-room.jpg",
-    title: "Living Room Lighting",
+    image: "/images/work-5.jpg",
+    title: "Commercial Interior Lighting",
   },
   {
-    image: "/images/new-construction.jpg",
-    title: "New Construction",
+    image: "/images/work-6.jpg",
+    title: "Kitchen Ceiling Light",
   },
 ];
 
