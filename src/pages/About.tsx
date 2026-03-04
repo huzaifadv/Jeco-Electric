@@ -62,7 +62,7 @@ const About = () => {
         <div className="container mx-auto px-4 max-w-3xl">
           <div className="grid grid-cols-3 gap-6">
             {[
-              { icon: Users, stat: "7+", label: "Years Experience" },
+              { icon: Users, stat: "9+", label: "Years Experience" },
               { icon: ShieldCheck, stat: "100%", label: "Satisfaction" },
               { icon: Wrench, stat: "24/7", label: "Emergency Service" },
             ].map((item) => (
