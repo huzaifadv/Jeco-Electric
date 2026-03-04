@@ -3,11 +3,11 @@ import { Footer } from "@/components/landing/Footer";
 import { Users, ShieldCheck, Wrench, Award, Heart, Target } from "lucide-react";
 
 const teamMembers = [
-  { name: "Stephen", role: "Contractor", image: "/images/electrician-hero.jpg" },
-  { name: "LeeAnn", role: "Office Manager", image: "/images/electrician-work.jpg" },
-  { name: "Sara", role: "Receptionist", image: "/images/electrical-panel.jpg" },
-  { name: "Carl", role: "Team Member", image: "/images/kitchen-remodel.jpg" },
-  { name: "Murf", role: "Team Member", image: "/images/modern-home.jpg" },
+  { name: "Stephen", role: "Contractor", image: "/images/team-stephen.png" },
+  { name: "LeeAnn", role: "Office Manager", image: "/images/team-leeann.png" },
+  { name: "Sara", role: "Receptionist", image: "/images/team-sara.png" },
+  { name: "Carl", role: "Team Member", image: "/images/team-carl.png" },
+  { name: "Murf", role: "Team Member", image: "/images/team-murf.png" },
 ];
 
 const About = () => {
