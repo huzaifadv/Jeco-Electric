@@ -65,30 +65,20 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Service Categories */}
+      {/* Service Categories Grid */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-5xl">
-          <div className="space-y-16">
-            {serviceCategories.map((service, index) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {serviceCategories.map((service) => (
               <div
                 key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center`}
+                className="bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border/50"
               >
-                <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
-                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/10 mb-4">
-                    <service.icon className="h-7 w-7 text-accent" />
-                  </div>
-                  <h2 className="text-2xl font-extrabold text-foreground mb-4">{service.title}</h2>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 mb-4">
+                  <service.icon className="h-6 w-6 text-accent" />
                 </div>
-                <div className={`rounded-2xl overflow-hidden shadow-lg ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <img
-                    src={index % 2 === 0 ? "/images/electrician-work.jpg" : "/images/electrical-panel.jpg"}
-                    alt={service.title}
-                    className="w-full h-64 object-cover"
-                    loading="lazy"
-                  />
-                </div>
+                <h2 className="text-lg font-bold text-foreground mb-2">{service.title}</h2>
+                <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
               </div>
             ))}
           </div>
