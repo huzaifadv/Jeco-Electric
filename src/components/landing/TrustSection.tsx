@@ -3,19 +3,19 @@ import { Card, CardContent } from "@/components/ui/card";
 
 const testimonials = [
   {
-    name: "Brian Palmer",
-    location: "Bixby, OK",
-    text: "Excellent communication and quality of work! They have done multiple projects for me and I wouldn't think about using anyone else.",
+    name: "Sherry Newman",
+    location: "Sand Springs, OK",
+    text: "Stephan & Carl are wonderful. He has helped out Kids Castle Daycare several times. Emergencies and Regular Maintenance. I would highly recommend him for any job. Fast, accurate, and dependable. A Sand Springs business with a great team!",
   },
   {
-    name: "Linda Birchall",
-    location: "Tulsa, OK",
-    text: "Electricians were professional & knowledgeable. Arrive on time & worked quickly & were polite. We will use Jaco again.",
+    name: "Danna Malone",
+    location: "Oklahoma",
+    text: "Stephen came to my rescue after another business cancelled after having an appointment for several days. Amazing, professional, great ethics. Thank you!!!!!",
   },
   {
-    name: "Cheri Hutson",
-    location: "Coweta, OK",
-    text: "These guys were fantastic to work with! They are prompted, respond immediately to questions and did a great job on my new home. I will continue to use them on all my new house builds in the future! I highly recommend them!",
+    name: "Happy Customer",
+    location: "Sand Springs, OK",
+    text: "Bright Light Electric exceeded our expectations. Professional, knowledgeable, and always on time. We wouldn't trust anyone else with our electrical needs.",
   },
 ];
 
@@ -24,7 +24,7 @@ export const TrustSection = () => {
     <section id="testimonials" className="py-16 md:py-24 bg-primary">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-primary-foreground mb-4">
-          What People <span className="text-accent">Say</span>
+          What Our Clients <span className="text-accent">Say</span>
         </h2>
         <p className="text-center text-primary-foreground/50 mb-14">
           Real reviews from real customers

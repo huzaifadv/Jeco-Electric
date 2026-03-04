@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Phone, Send, MapPin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -12,6 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useState } from "react";
 
 export const LeadForm = () => {
   const { toast } = useToast();
@@ -22,7 +22,7 @@ export const LeadForm = () => {
     setSubmitted(true);
     toast({
       title: "Quote Request Received!",
-      description: "We'll get back to you within 1 hour during business hours.",
+      description: "We'll get back to you shortly with your price quote.",
     });
   };
 
@@ -33,10 +33,10 @@ export const LeadForm = () => {
     <section id="contact" className="py-16 md:py-24 bg-primary">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-primary-foreground mb-4">
-          Get a <span className="text-accent">Quote</span>
+          Get a <span className="text-accent">Price Quote</span>
         </h2>
         <p className="text-center text-primary-foreground/50 mb-14">
-          Fill out the form or give us a call — we'll get back to you fast
+          Fill out the form or give us a call — we'll get back to you shortly
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
@@ -50,8 +50,8 @@ export const LeadForm = () => {
                     <MapPin className="h-5 w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="text-sm font-semibold text-primary-foreground">Tulsa Area</p>
-                    <p className="text-sm text-primary-foreground/60">PO Box 2751, Broken Arrow, OK 74013</p>
+                    <p className="text-sm font-semibold text-primary-foreground">Sand Springs Area</p>
+                    <p className="text-sm text-primary-foreground/60">1031 W 4th St, Sand Springs, OK 74063</p>
                   </div>
                 </div>
 
@@ -61,8 +61,8 @@ export const LeadForm = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-primary-foreground">Email</p>
-                    <a href="mailto:tyson.jacobs@jacoelec.com" className="text-sm text-accent hover:underline">
-                      tyson.jacobs@jacoelec.com
+                    <a href="mailto:info@brightlightelectric.com" className="text-sm text-accent hover:underline">
+                      info@brightlightelectric.com
                     </a>
                   </div>
                 </div>
@@ -73,8 +73,8 @@ export const LeadForm = () => {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-primary-foreground">Phone</p>
-                    <a href="tel:9188941622" className="text-sm text-accent hover:underline font-bold">
-                      (918) 894-1622
+                    <a href="tel:9182457555" className="text-sm text-accent hover:underline font-bold">
+                      (918) 245-7555
                     </a>
                   </div>
                 </div>
@@ -84,7 +84,7 @@ export const LeadForm = () => {
             <div className="p-6 rounded-2xl bg-accent/10 border border-accent/20">
               <p className="text-accent font-bold text-sm mb-1">⚡ Free Estimates, Always</p>
               <p className="text-primary-foreground/60 text-xs">
-                No hidden fees, no obligations. Get honest pricing from licensed professionals with 30+ years of experience.
+                No hidden fees, no obligations. Get honest pricing from our skilled and experienced team of electricians.
               </p>
             </div>
           </div>
@@ -98,12 +98,12 @@ export const LeadForm = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-primary-foreground mb-2">Thank You!</h3>
                 <p className="text-primary-foreground/60 mb-6">
-                  We'll contact you shortly. For immediate service:
+                  We'll reach out to you shortly with your price quote.
                 </p>
                 <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
-                  <a href="tel:9188941622">
+                  <a href="tel:9182457555">
                     <Phone className="mr-2 h-5 w-5" />
-                    Call (918) 894-1622
+                    Call (918) 245-7555
                   </a>
                 </Button>
               </div>
@@ -132,21 +132,26 @@ export const LeadForm = () => {
                 </div>
 
                 <div>
-                  <Label className="text-primary-foreground/80">Preferred Contact Method</Label>
+                  <Label className="text-primary-foreground/80">Select a Service</Label>
                   <Select>
                     <SelectTrigger className={inputClasses}>
-                      <SelectValue placeholder="Select preference" />
+                      <SelectValue placeholder="Choose an option" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="phone">Phone</SelectItem>
-                      <SelectItem value="email">Email</SelectItem>
-                      <SelectItem value="text">Text Message</SelectItem>
+                      <SelectItem value="residential">Residential</SelectItem>
+                      <SelectItem value="commercial">Commercial</SelectItem>
+                      <SelectItem value="industrial">Industrial</SelectItem>
+                      <SelectItem value="oilfield">Oil Field</SelectItem>
+                      <SelectItem value="marine">Marine</SelectItem>
+                      <SelectItem value="newconstruction">New Construction</SelectItem>
+                      <SelectItem value="remodeling">Remodeling</SelectItem>
+                      <SelectItem value="emergency">Emergency Repairs</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
-                  <Label htmlFor="comments" className="text-primary-foreground/80">Comments</Label>
+                  <Label htmlFor="comments" className="text-primary-foreground/80">Give us more details of the job...</Label>
                   <Textarea
                     id="comments"
                     rows={4}
@@ -164,7 +169,7 @@ export const LeadForm = () => {
                 </Button>
 
                 <p className="text-center text-primary-foreground/40 text-xs">
-                  We respond within 1 hour during business hours.
+                  Thank you! We will reach out to you shortly with your price quote.
                 </p>
               </form>
             )}

@@ -12,7 +12,7 @@ export const StickyMobileCTA = () => {
         asChild
         className="flex-1 bg-accent text-[#000] font-bold py-5"
       >
-        <a href="tel:9188941622">
+        <a href="tel:9182457555">
           <Phone className="mr-2 h-4 w-4" />
           Call Now
         </a>

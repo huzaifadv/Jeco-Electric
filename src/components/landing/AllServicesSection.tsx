@@ -3,46 +3,46 @@ import {
   Plug,
   Gauge,
   Lightbulb,
-  Search,
-  Building,
+  Ship,
+  Droplets,
 } from "lucide-react";
 
 const allServices = [
   {
     icon: FileCheck,
-    title: "Electrical Code Compliance",
+    title: "Oil Field",
     description:
-      "Our experts strictly abide by all the national and local electrical codes. Whether changing a light bulb or fixing a circuit breaker, our trained technicians always do the job by the book.",
+      "Specialized oil field electrical services tailored to meet the unique demands of the energy sector. Robust systems, troubleshooting, and maintenance.",
   },
   {
-    icon: Plug,
-    title: "Outlet Installation",
+    icon: Ship,
+    title: "Marine",
     description:
-      "Need an outlet for your new TV location or a new USB outlet? JACO Electric is fully capable of installing, repairing and replacing electrical outlets.",
+      "Comprehensive solutions for the unique electrical needs of the maritime industry — navigation systems, safety equipment, and more.",
   },
   {
     icon: Gauge,
-    title: "Upgrading Electrical Panels",
+    title: "Emergency Repairs",
     description:
-      "Electrical panels are the heart of your electrical system. Upgrading or changing them demands the hands of a skilled electrician — we provide that whenever you need.",
+      "Available 24/7 to address unexpected outages, faults, or other urgent issues. Swift troubleshooting with minimal downtime.",
   },
   {
     icon: Lightbulb,
-    title: "Lighting Installation",
+    title: "Remodeling",
     description:
-      "Task lighting, accent lighting, overhead, fluorescent, outdoor security, and decorative lighting — our electricians have years of experience for indoor and outdoor installations.",
+      "Modern lighting installations, smart home upgrades, and tailored electrical solutions for your renovation projects.",
   },
   {
-    icon: Search,
-    title: "Electrical Inspection & Repair",
+    icon: Plug,
+    title: "New Construction",
     description:
-      "We conduct on-demand inspections of your electrical systems. From simple fuse replacement to complex rewiring projects, our trained technicians handle it all.",
+      "From meticulous wiring to state-of-the-art lighting installations — reliable, efficient, and code-compliant electrical systems.",
   },
   {
-    icon: Building,
-    title: "New Construction Electrical",
+    icon: Droplets,
+    title: "Free Estimates",
     description:
-      "Electrical wiring and panel installation for newly constructed homes or offices. JACO Electric can fulfill all of your new building's electrical requirements.",
+      "We always provide free estimates with no hidden fees. Get honest pricing from our skilled and experienced team.",
   },
 ];
 
@@ -51,11 +51,11 @@ export const AllServicesSection = () => {
     <section className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
-          Residential & Commercial{" "}
+          More{" "}
           <span className="text-accent">Services</span>
         </h2>
         <p className="text-center text-muted-foreground mb-14 max-w-xl mx-auto">
-          Contact us if you encounter any of the following electrical issues in your home or office
+          Our diverse range of services encompasses commercial, residential, industrial, and specialized solutions
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
