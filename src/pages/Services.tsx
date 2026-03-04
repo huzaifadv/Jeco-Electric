@@ -1,52 +1,51 @@
-import { useState } from "react";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
 import { LeadForm } from "@/components/landing/LeadForm";
 import {
-  Home, Building, Factory, Zap, Hammer, Droplets, Ship, HardHat,
-  FileCheck, Plug, Gauge, Lightbulb, Search, Building as Building2
+  Home, Building, Factory, Zap, Hammer, Ship, HardHat, Droplets
 } from "lucide-react";
 
 const serviceCategories = [
   {
     icon: Home,
     title: "Residential",
-    description: "Complete residential electrical services from installations to repairs. We prioritize the safety and efficiency of your home's electrical systems with top-notch materials and expert techniques.",
+    description: "Discover unparalleled residential electrical services with our expert team at Bright Light Electric. From meticulous installations to prompt repairs, we prioritize the safety and efficiency of your home's electrical systems. Our skilled technicians use top-notch materials and cutting-edge techniques to ensure seamless solutions tailored to your needs. Trust us to illuminate your home with excellence and reliability.",
   },
   {
     icon: Building,
     title: "Commercial",
-    description: "Tailored solutions for commercial spaces — from efficient electrical installations to strategic system upgrades. We prioritize safety, compliance, and energy efficiency for your business.",
+    description: "Elevate your business with our comprehensive commercial electrical services at Bright Light Electric. Our dedicated team specializes in providing tailored solutions to meet the unique demands of commercial spaces. From efficient electrical installations to strategic system upgrades, we prioritize safety, compliance, and energy efficiency. Count on us to power your business with precision and reliability.",
   },
   {
     icon: Factory,
     title: "Industrial",
-    description: "Robust power distribution systems and advanced automation solutions for manufacturing environments. We handle complex electrical challenges to keep your operations running seamlessly.",
+    description: "Empower your industrial operations with the expertise of Bright Light Electric. Our industrial electrical services are designed to meet the dynamic needs of manufacturing and production environments. From robust power distribution systems to advanced automation solutions, we specialize in enhancing efficiency, reliability, and safety for your industrial facilities.",
   },
   {
     icon: Zap,
     title: "Emergency Repairs",
-    description: "Available 24/7 to address unexpected outages and urgent electrical issues. Our responsive team troubleshoots and resolves problems promptly, minimizing downtime.",
+    description: "When electrical emergencies strike, Bright Light Electric is your reliable partner for swift and effective solutions. Our emergency electrical services are available 24/7 to address unexpected outages, faults, or other urgent issues. Our responsive team of skilled technicians is ready to troubleshoot, diagnose, and rectify electrical problems promptly.",
   },
   {
     icon: Hammer,
     title: "Remodeling",
-    description: "Modern lighting installations, smart home upgrades, and complete electrical solutions for your renovation projects. Every component is seamlessly integrated.",
+    description: "Transform your space with confidence using our remodeling electrical services at Bright Light Electric. Whether you're updating a room or undertaking a comprehensive renovation, our skilled team is here to provide tailored electrical solutions. From modern lighting installations to smart home upgrades, we specialize in enhancing the functionality and aesthetics of your remodeled spaces.",
+  },
+  {
+    icon: Droplets,
+    title: "Oil Field",
+    description: "Fuel the heart of your oil field operations with the specialized expertise of Bright Light Electric. Our oil field electrical services are tailored to meet the unique demands of the energy sector. From designing and implementing robust electrical systems to troubleshooting and maintaining critical equipment, we are committed to enhancing reliability and efficiency.",
+  },
+  {
+    icon: Ship,
+    title: "Marine",
+    description: "Set sail with confidence, knowing that Bright Light Electric is your trusted partner for marine electrical services. We specialize in providing comprehensive solutions for the unique electrical needs of the maritime industry. From expert installations and maintenance to troubleshooting and repairs, our skilled technicians ensure peak performance.",
   },
   {
     icon: HardHat,
     title: "New Construction",
-    description: "From meticulous wiring to state-of-the-art lighting installations, we equip new construction projects with reliable, efficient, and code-compliant electrical systems.",
+    description: "Embark on your construction journey with the assurance of superior electrical solutions from Bright Light Electric. Our new construction electrical services are crafted to seamlessly integrate cutting-edge technology and industry expertise into your building projects. From meticulous wiring to state-of-the-art lighting installations.",
   },
-];
-
-const detailedServices = [
-  { icon: FileCheck, title: "Electrical Code Compliance", description: "Our experts strictly abide by all national and local electrical codes. Whether changing a light bulb or fixing a circuit breaker, our trained technicians always do the job by the book." },
-  { icon: Plug, title: "Outlet Installation", description: "Need an outlet for your new TV location or a new USB outlet? We're fully capable of installing, repairing and replacing electrical outlets." },
-  { icon: Gauge, title: "Upgrading Electrical Panels", description: "Electrical panels are the heart of your electrical system. Upgrading or changing them demands the hands of a skilled electrician — we provide that whenever you need." },
-  { icon: Lightbulb, title: "Lighting Installation", description: "Task lighting, accent lighting, overhead, fluorescent, outdoor security, and decorative lighting — our electricians have years of experience for all installations." },
-  { icon: Search, title: "Electrical Inspection & Repair", description: "We conduct on-demand inspections of your electrical systems. From simple fuse replacement to complex rewiring projects, our trained technicians handle it all." },
-  { icon: Building2, title: "New Construction Electrical", description: "Electrical wiring and panel installation for newly constructed homes or offices. We can fulfill all of your new building's electrical requirements." },
 ];
 
 const Services = () => {
@@ -61,7 +60,7 @@ const Services = () => {
             Our <span className="text-accent">Services</span>
           </h1>
           <p className="text-primary-foreground/60 text-lg max-w-2xl mx-auto">
-            Through industry-leading materials and highly skilled electricians, we consistently provide robust and enduring electrical solutions.
+            Through collaboration with industry-leading materials and the engagement of highly skilled and detail-oriented team members, we consistently provide robust and enduring solutions for all.
           </p>
         </div>
       </section>
@@ -73,7 +72,7 @@ const Services = () => {
             {serviceCategories.map((service, index) => (
               <div
                 key={service.title}
-                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center ${index % 2 === 1 ? "lg:direction-rtl" : ""}`}
+                className={`grid grid-cols-1 lg:grid-cols-2 gap-10 items-center`}
               >
                 <div className={`${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-accent/10 mb-4">
@@ -90,29 +89,6 @@ const Services = () => {
                     loading="lazy"
                   />
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Detailed Services Grid */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <div className="container mx-auto px-4 max-w-5xl">
-          <h2 className="text-3xl font-extrabold text-center text-foreground mb-4">
-            All <span className="text-accent">Services</span>
-          </h2>
-          <p className="text-center text-muted-foreground mb-14 max-w-xl mx-auto">
-            Contact us if you encounter any of the following electrical issues
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {detailedServices.map((s) => (
-              <div key={s.title} className="bg-card rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border/50">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-accent/10 mb-4">
-                  <s.icon className="h-6 w-6 text-accent" />
-                </div>
-                <h3 className="text-lg font-bold text-foreground mb-2">{s.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{s.description}</p>
               </div>
             ))}
           </div>

@@ -40,7 +40,7 @@ const Careers = () => {
             Join Our <span className="text-accent">Team</span>
           </h1>
           <p className="text-primary-foreground/60 text-lg max-w-2xl mx-auto">
-            We're always looking for skilled, motivated electricians to join the Jaco Electric family.
+            We're always looking for skilled, motivated electricians to join the Bright Light Electric family.
           </p>
         </div>
       </section>
@@ -49,7 +49,7 @@ const Careers = () => {
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl font-extrabold text-center text-foreground mb-12">
-            Why <span className="text-accent">Jaco Electric?</span>
+            Why <span className="text-accent">Bright Light Electric?</span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
             {benefits.map((b) => (
