@@ -19,10 +19,10 @@ const Index = () => {
       <ServicesSection />
       <AboutSection />
       <UnrivaledSection />
+      <GallerySection />
       <AllServicesSection />
       <CoreValuesSection />
       <TrustSection />
-      <GallerySection />
       <LeadForm />
       <Footer />
       <StickyMobileCTA />

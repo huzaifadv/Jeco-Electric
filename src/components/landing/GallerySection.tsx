@@ -30,10 +30,10 @@ export const GallerySection = () => {
     <section className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-foreground mb-4">
-          Update Your <span className="text-accent">Space</span>
+          Our <span className="text-accent">Work</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-lg mx-auto">
-          Popular projects our customers love
+          Recent projects by our team
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
