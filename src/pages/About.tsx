@@ -104,12 +104,12 @@ const About = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              "/images/recessed-lighting.jpg",
-              "/images/ceiling-fan.jpg",
-              "/images/kitchen-remodel.jpg",
-              "/images/modern-home.jpg",
-              "/images/living-room.jpg",
-              "/images/new-construction.jpg",
+              "/images/work-1.jpg",
+              "/images/work-2.jpg",
+              "/images/work-3.jpg",
+              "/images/work-4.jpg",
+              "/images/work-5.jpg",
+              "/images/work-6.jpg",
             ].map((img, i) => (
               <div key={i} className="rounded-xl overflow-hidden shadow-md aspect-[4/3]">
                 <img src={img} alt={`Project ${i + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" loading="lazy" />
