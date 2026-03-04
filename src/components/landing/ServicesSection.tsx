@@ -1,4 +1,4 @@
-import { Home, HardHat, ShieldCheck, Building, Factory, Zap, Ship, Droplets } from "lucide-react";
+import { Home, Building, Factory, Zap, Hammer, Ship, HardHat, Droplets } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
@@ -6,20 +6,42 @@ const services = [
   {
     icon: Home,
     title: "Residential",
-    description:
-      "From meticulous installations to prompt repairs, we prioritize the safety and efficiency of your home's electrical systems.",
+    description: "From meticulous installations to prompt repairs, we prioritize the safety and efficiency of your home's electrical systems.",
   },
   {
     icon: Building,
     title: "Commercial",
-    description:
-      "Tailored solutions to meet the unique demands of commercial spaces — safety, compliance, and energy efficiency.",
+    description: "Tailored solutions to meet the unique demands of commercial spaces — safety, compliance, and energy efficiency.",
   },
   {
     icon: Factory,
     title: "Industrial",
-    description:
-      "Robust power distribution systems and advanced automation solutions for manufacturing and production environments.",
+    description: "Robust power distribution systems and advanced automation solutions for manufacturing environments.",
+  },
+  {
+    icon: Zap,
+    title: "Emergency Repairs",
+    description: "Available 24/7 to address unexpected outages, faults, or other urgent electrical issues promptly.",
+  },
+  {
+    icon: Hammer,
+    title: "Remodeling",
+    description: "Modern lighting installations, smart home upgrades, and tailored electrical solutions for renovations.",
+  },
+  {
+    icon: Droplets,
+    title: "Oil Field",
+    description: "Specialized oil field electrical services tailored to meet the unique demands of the energy sector.",
+  },
+  {
+    icon: Ship,
+    title: "Marine",
+    description: "Comprehensive solutions for the unique electrical needs of the maritime industry.",
+  },
+  {
+    icon: HardHat,
+    title: "New Construction",
+    description: "From meticulous wiring to state-of-the-art lighting — reliable, code-compliant electrical systems.",
   },
 ];
 
