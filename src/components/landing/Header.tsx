@@ -52,9 +52,9 @@ export const Header = () => {
               size="sm"
               className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90 font-bold"
             >
-              <a href="tel:9188941622">
+              <a href="tel:9182457555">
                 <Phone className="mr-2 h-4 w-4" />
-                (918) 894-1622
+                (918) 245-7555
               </a>
             </Button>
 
@@ -86,9 +86,9 @@ export const Header = () => {
             ))}
             <div className="px-4 pt-2">
               <Button asChild className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold">
-                <a href="tel:9188941622">
+                <a href="tel:9182457555">
                   <Phone className="mr-2 h-4 w-4" />
-                  (918) 894-1622
+                  (918) 245-7555
                 </a>
               </Button>
             </div>
