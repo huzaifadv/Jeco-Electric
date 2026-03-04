@@ -36,7 +36,7 @@ const Contact = () => {
                 </div>
                 <h3 className="text-sm font-bold text-foreground mb-1">{item.label}</h3>
                 {item.href ? (
-                  <a href={item.href} className="text-sm text-accent hover:underline break-all">{item.value}</a>
+                  <a href={item.href} className="text-sm text-foreground hover:underline break-all">{item.value}</a>
                 ) : (
                   <p className="text-sm text-muted-foreground">{item.value}</p>
                 )}
