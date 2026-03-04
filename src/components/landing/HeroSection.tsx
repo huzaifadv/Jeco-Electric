@@ -1,5 +1,6 @@
 import { Phone, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   const scrollToForm = () => {
@@ -22,21 +23,21 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 md:py-32 text-center max-w-3xl">
         <div className="inline-flex items-center gap-2 bg-accent/15 border border-accent/30 rounded-full px-5 py-2 mb-8">
           <span className="text-accent font-bold text-sm tracking-wide uppercase">
-            ⚡ Trusted by Homeowners Across Tulsa Since 1994
+            ⚡ Quality Electrical Solutions Since 2017
           </span>
         </div>
 
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary-foreground leading-[1.1] mb-6">
-          Leaders in Quality{" "}
-          <span className="text-accent">Electrical Service</span>{" "}
-          & Construction
+          Welcome to{" "}
+          <span className="text-accent">Bright Light</span>{" "}
+          Electric
         </h1>
 
         <p className="text-primary-foreground/70 text-lg md:text-xl mb-4 max-w-2xl mx-auto leading-relaxed">
-          Serving Broken Arrow, Tulsa, Bixby, Jenks, and surrounding areas. We are dedicated to providing you the best electrical experience and expertise.
+          Prioritizing your satisfaction remains at the forefront of our mission. Through collaboration with industry-leading materials and highly skilled electricians, we consistently provide robust and enduring solutions.
         </p>
         <p className="text-primary-foreground/50 text-base mb-10">
-          Licensed (OK #094652) · 30+ Years Experience · Free Estimates
+          Commercial · Residential · Industrial · Oil Field · Marine · New Construction
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -45,9 +46,9 @@ export const HeroSection = () => {
             size="lg"
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg font-bold px-8 py-6 rounded-lg shadow-lg shadow-accent/20"
           >
-            <a href="tel:9188941622">
+            <a href="tel:9182457555">
               <Phone className="mr-2 h-5 w-5" />
-              Call (918) 894-1622
+              Call (918) 245-7555
             </a>
           </Button>
 

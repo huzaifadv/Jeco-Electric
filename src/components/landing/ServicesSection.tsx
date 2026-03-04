@@ -1,24 +1,25 @@
-import { Home, HardHat, ShieldCheck } from "lucide-react";
+import { Home, HardHat, ShieldCheck, Building, Factory, Zap, Ship, Droplets } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Home,
-    title: "Residential Service",
+    title: "Residential",
     description:
-      "Whether it's a faulty plug, tripping breaker, new light or panel replacement — call us today and let us know how we can help.",
+      "From meticulous installations to prompt repairs, we prioritize the safety and efficiency of your home's electrical systems.",
   },
   {
-    icon: ShieldCheck,
-    title: "Free Estimates",
+    icon: Building,
+    title: "Commercial",
     description:
-      "We always offer free estimates and stick to them. Over 95% of our jobs are billed at the estimate cost.",
+      "Tailored solutions to meet the unique demands of commercial spaces — safety, compliance, and energy efficiency.",
   },
   {
-    icon: HardHat,
-    title: "New Construction & Remodels",
+    icon: Factory,
+    title: "Industrial",
     description:
-      "Jaco Electric is your elite electrical contractor for all new construction and remodeling wiring.",
+      "Robust power distribution systems and advanced automation solutions for manufacturing and production environments.",
   },
 ];
 
@@ -30,7 +31,7 @@ export const ServicesSection = () => {
           Our <span className="text-accent">Services</span>
         </h2>
         <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
-          Professional electrical solutions for every need
+          We are committed to delivering exceptional work and consistently pursuing excellence in service
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -48,6 +49,12 @@ export const ServicesSection = () => {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="text-center mt-10">
+          <Link to="/services" className="text-accent font-bold hover:underline">
+            View All Services →
+          </Link>
         </div>
       </div>
     </section>

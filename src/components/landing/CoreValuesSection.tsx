@@ -3,33 +3,33 @@ import { Heart, Scale, Trophy, Shield, HeartHandshake } from "lucide-react";
 const values = [
   {
     icon: Heart,
-    title: "Integrity",
+    title: "Passion for People",
     description:
-      "Our electrical specialists are truthful and forthright. When we promise to do something, we make sure it happens.",
+      "We founded Bright Light Electric out of a pure passion for people. Every project reflects our care for our customers and community.",
   },
   {
     icon: Scale,
-    title: "Respect for Rules & Regulations",
+    title: "Commitment to Quality",
     description:
-      "We abide by all national and local ordinances, regulations, and laws pertinent to the electrical fraternity.",
+      "Since 2017, our unwavering commitment to quality has been central to our operations. We use only industry-leading materials.",
   },
   {
     icon: Trophy,
-    title: "Excellence",
+    title: "Excellence in Service",
     description:
-      "All repairs, installations, and electrical system designs are stringently in line with the highest quality standards.",
+      "We are committed to delivering exceptional work and consistently pursuing excellence to foster enduring relationships.",
   },
   {
     icon: Shield,
-    title: "Reputation & Safety",
+    title: "Safety First",
     description:
-      "We always strive to operate a well-reputed, respectable, safe and clean business that reflects the highest standards.",
+      "We strictly abide by all national and local electrical codes. Safety is never compromised on any project we undertake.",
   },
   {
     icon: HeartHandshake,
-    title: "Customer Service",
+    title: "Customer Satisfaction",
     description:
-      "Without you there is no JACO Electric! Our number one concern is your happiness and safety. We work with you to determine and accomplish your needs.",
+      "Prioritizing your satisfaction remains at the forefront of our mission. We go above and beyond to keep you coming back.",
   },
 ];
 
@@ -41,7 +41,7 @@ export const CoreValuesSection = () => {
           Our Core <span className="text-accent">Values</span>
         </h2>
         <p className="text-center text-muted-foreground mb-14 max-w-xl mx-auto">
-          We do our job with effectiveness, cleanliness, competence, courteousness, and convenience
+          What drives us to deliver the best electrical solutions every time
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

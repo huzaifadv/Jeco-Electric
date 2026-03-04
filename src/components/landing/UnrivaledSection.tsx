@@ -3,21 +3,21 @@ import { Smile, Award, HomeIcon } from "lucide-react";
 const points = [
   {
     icon: Smile,
-    title: "Friendly & Empathetic",
+    title: "Passion for People",
     description:
-      "We believe it is our responsibility to reduce your stress by being courteous and friendly, and fixing your problem as soon as possible.",
+      "We founded Bright Light Electric out of a pure passion for people. Our goals and ambitions come together to form a truly amazing company.",
   },
   {
     icon: Award,
-    title: "Skilled Professionals",
+    title: "Masters at Our Craft",
     description:
-      "Every single member of our company is broadly experienced and fully certified. Our electricians keep their knowledge updated regarding new technologies.",
+      "Since 2017, we have become masters at our craft. We go above and beyond your requests to keep you coming back for more.",
   },
   {
     icon: HomeIcon,
-    title: "Respect for Your Property",
+    title: "Enduring Solutions",
     description:
-      "Whether our Electricians come to your home or office, we respect your property. After doing our job, we clean the space and leave no mess behind.",
+      "Through industry-leading materials and highly skilled electricians, we consistently provide robust and enduring solutions for all.",
   },
 ];
 
@@ -37,11 +37,11 @@ export const UnrivaledSection = () => {
 
       <div className="relative z-10 container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-primary-foreground mb-4">
-          What Makes Our Electricians{" "}
-          <span className="text-accent">Unrivaled</span>
+          Why Choose{" "}
+          <span className="text-accent">Bright Light Electric</span>
         </h2>
         <p className="text-center text-primary-foreground/50 mb-14 max-w-lg mx-auto">
-          We go above and beyond on every job
+          Unwavering commitment to quality since 2017
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

@@ -9,15 +9,14 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src="/images/jaco-logo.png" alt="Jaco Electric Logo" className="h-8 w-auto" />
+              <img src="/images/jaco-logo.png" alt="Bright Light Electric Logo" className="h-8 w-auto" />
               <div className="leading-none ml-[-10px]">
-                <span className="text-base font-extrabold text-background tracking-wide">JACO</span>
+                <span className="text-base font-extrabold text-background tracking-wide">BRIGHT LIGHT</span>
                 <span className="text-base font-extrabold text-accent tracking-wide ml-1">ELECTRIC</span>
               </div>
             </div>
             <p className="text-background/50 text-sm leading-relaxed">
-              Leaders in quality electrical service and construction. Serving Broken Arrow, Tulsa, Bixby, Jenks, and
-              surrounding areas.
+              Quality electrical solutions since 2017. Serving Sand Springs, Tulsa, and surrounding areas.
             </p>
           </div>
 
@@ -48,18 +47,18 @@ export const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <MapPin className="h-4 w-4 text-accent shrink-0" />
-                PO Box 2751, Broken Arrow, OK 74013
+                1031 W 4th St, Sand Springs, OK 74063
               </div>
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <Phone className="h-4 w-4 text-accent shrink-0" />
-                <a href="tel:9188941622" className="hover:text-accent transition-colors">
-                  (918) 894-1622
+                <a href="tel:9182457555" className="hover:text-accent transition-colors">
+                  (918) 245-7555
                 </a>
               </div>
               <div className="flex items-center gap-2 text-sm text-background/50">
                 <Mail className="h-4 w-4 text-accent shrink-0" />
-                <a href="mailto:tyson.jacobs@jacoelec.com" className="hover:text-accent transition-colors">
-                  tyson.jacobs@jacoelec.com
+                <a href="mailto:info@brightlightelectric.com" className="hover:text-accent transition-colors">
+                  info@brightlightelectric.com
                 </a>
               </div>
             </div>
@@ -68,7 +67,7 @@ export const Footer = () => {
 
         <div className="border-t border-background/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-background/40">
-            © {new Date().getFullYear()} Jaco Electric LLC · Oklahoma License #094652
+            © {new Date().getFullYear()} Bright Light Electric, LLC
           </p>
           <a href="#" className="text-xs text-background/40 hover:text-accent transition-colors">
             Privacy Policy

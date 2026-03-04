@@ -25,9 +25,9 @@ const Contact = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {[
-              { icon: Phone, label: "Phone", value: "(918) 894-1622", href: "tel:9188941622" },
-              { icon: Mail, label: "Email", value: "tyson.jacobs@jacoelec.com", href: "mailto:tyson.jacobs@jacoelec.com" },
-              { icon: MapPin, label: "Address", value: "PO Box 2751, Broken Arrow, OK 74013", href: undefined },
+              { icon: Phone, label: "Phone", value: "(918) 245-7555", href: "tel:9182457555" },
+              { icon: Mail, label: "Email", value: "info@brightlightelectric.com", href: "mailto:info@brightlightelectric.com" },
+              { icon: MapPin, label: "Address", value: "1031 W 4th St, Sand Springs, OK 74063", href: undefined },
               { icon: Clock, label: "Hours", value: "Mon-Fri: 7AM - 6PM", href: undefined },
             ].map((item) => (
               <div key={item.label} className="text-center p-6 rounded-2xl bg-secondary border border-border/50">

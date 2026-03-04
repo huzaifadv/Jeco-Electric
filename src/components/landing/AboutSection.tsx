@@ -5,7 +5,7 @@ export const AboutSection = () => {
     <section id="about" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4 max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-extrabold text-center text-foreground mb-14">
-          About <span className="text-accent">Jaco Electric</span>
+          About <span className="text-accent">Bright Light Electric</span>
         </h2>
 
         {/* Image + Text */}
@@ -13,20 +13,20 @@ export const AboutSection = () => {
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <img
               src="/images/electrician-hero.jpg"
-              alt="Jaco Electric professional electrician"
+              alt="Bright Light Electric professional electrician"
               className="w-full h-72 lg:h-96 object-cover"
               loading="lazy"
             />
           </div>
           <div className="space-y-5 text-muted-foreground leading-relaxed">
             <p>
-              With over 30 years combined electrical experience, our Electricians are the most professional and trusted you will find. We respect your home and treat it like you would.
+              We founded Bright Light Electric out of a pure passion for people. Our goals, our ambitions, our inspirations, all come together to form a truly amazing company that all of us are proud to be a part of.
             </p>
             <p>
-              JACO Electric offers servicing, replacement, repair, and installation for all residential electrical needs. We have skilled, qualified and friendly staff. To us there is no job that is too small or too big.
+              Since opening back in 2017, we have become masters at our craft. We go above and beyond your requests to keep you coming back for more.
             </p>
             <p>
-              When we arrive for the service call, the first thing we do is conduct a comprehensive inspection and analysis of the problem. We provide our professional recommendation, then complete the job with precision.
+              Through collaboration with industry-leading materials and the engagement of highly skilled and detail-oriented electricians, we consistently provide robust and enduring solutions for all.
             </p>
           </div>
         </div>
@@ -34,9 +34,9 @@ export const AboutSection = () => {
         {/* Stats row */}
         <div className="grid md:grid-cols-3 gap-4 max-w-xl mx-auto">
           {[
-            { icon: Users, stat: "30+", label: "Years Experience" },
-            { icon: ShieldCheck, stat: "95%", label: "Billed at Estimate" },
-            { icon: Wrench, stat: "100%", label: "Satisfaction" },
+            { icon: Users, stat: "7+", label: "Years Experience" },
+            { icon: ShieldCheck, stat: "100%", label: "Satisfaction" },
+            { icon: Wrench, stat: "24/7", label: "Emergency Service" },
           ].map((item) => (
             <div
               key={item.label}
