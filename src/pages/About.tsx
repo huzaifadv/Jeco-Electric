@@ -85,7 +85,7 @@ const About = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member) => (
               <div key={member.name} className="text-center group">
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden shadow-lg mb-4 border-4 border-accent/20 group-hover:border-accent/50 transition-colors">
+                <div className="w-40 h-52 mx-auto rounded-2xl overflow-hidden shadow-lg mb-4 border-4 border-accent/20 group-hover:border-accent/50 transition-colors">
                   <img src={member.image} alt={member.name} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <h3 className="text-base font-bold text-foreground">{member.name}</h3>
