@@ -23,7 +23,7 @@ const Contact = () => {
       {/* Contact Cards */}
       <section className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-4 max-w-4xl">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16 max-w-2xl mx-auto">
             {[
               { icon: Phone, label: "Phone", value: "(918) 245-7555", href: "tel:9182457555" },
               { icon: Mail, label: "Email", value: "info@brightlightelectric.com", href: "mailto:info@brightlightelectric.com" },
