@@ -5,7 +5,7 @@ const testimonials = [
   {
     name: "Sherry Newman",
     location: "Sand Springs, OK",
-    text: "Stephan & Carl are wonderful. He has helped out Kids Castle Daycare several times. Emergencies and Regular Maintenance. I would highly recommend him for any job. Fast, accurate, and dependable. A Sand Springs business with a great team!",
+    text: "Stephan & Carl are wonderful. He has help out Kids Castle Daycare several times. Emergencies and Regular Maintenance. I would highly recommend him for any job. Fast, accurate, and dependable. A Sand Springs business with a great team!",
   },
   {
     name: "Danna Malone",
@@ -13,9 +13,9 @@ const testimonials = [
     text: "Stephen came to my rescue after another business cancelled after having an appointment for several days. Amazing, professional, great ethics. Thank you!!!!!",
   },
   {
-    name: "Happy Customer",
+    name: "Satisfied Customer",
     location: "Sand Springs, OK",
-    text: "Bright Light Electric exceeded our expectations. Professional, knowledgeable, and always on time. We wouldn't trust anyone else with our electrical needs.",
+    text: "Bright Light Electric exceeded our expectations on every level. Their team is professional, knowledgeable, and always on time. Highly recommended!",
   },
 ];
 
