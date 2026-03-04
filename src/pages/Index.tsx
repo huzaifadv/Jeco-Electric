@@ -21,8 +21,8 @@ const Index = () => {
       <UnrivaledSection />
       <GallerySection />
       <AllServicesSection />
-      <CoreValuesSection />
       <TrustSection />
+      <CoreValuesSection />
       <LeadForm />
       <Footer />
       <StickyMobileCTA />
